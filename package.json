@@ -16,7 +16,18 @@
       "icon": "./img/appIcon.png"
     },
     "win": {
-    "icon": "./img/appIcon.png"
+    "icon": "./img/appIcon.png",
+    "target": [
+      "nsis"
+    ]
+    },
+    "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowElevation": true,
+    "installerIcon": "path/to/installer/icon.ico",
+    "uninstallerIcon": "path/to/uninstaller/icon.ico",
+    "uninstallerStub": "path/to/uninstaller.exe"
   }
   },
   "keywords": [],
