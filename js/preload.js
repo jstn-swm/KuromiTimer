@@ -9,5 +9,5 @@ contextBridge.exposeInMainWorld('functions', {
     minimizeWindow: () => ipcRenderer.invoke('minimizeWindow'),
 });
 contextBridge.exposeInMainWorld('images', {
-    get: (initiateImg) => `file://${path.join(__dirname, "../img/", initiateImg)}`,
+    get: (initiateImg) => `file://${path.join(__dirname, "../img/", initiateImg)}`
 });

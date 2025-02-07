@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuromi Pomodoro Timer</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Kuromi Pomodoro</h1>
+        <nav>
+            <img id="appIcon" src="../img/image-removebg-preview-2.png" alt="AppIcon">
+            <button id="minimize">Minimize</button>
+            <button id="close">Close</button>
+        </nav>
+    </header>
+    <main>
+        <button class="minuteOption" id="min-1"></button>
+        <button class="minuteOption" id="min-2"></button>
+        <button class="minuteOption" id="min-3"></button>
+        <button class="minuteOption" id="min-4"></button>
+        <button id="play"></button>
+        <canvas id="clock"></canvas>
+        <button id="finish"></button>
+    </main>
+    <footer>
+        <p id="versions">versions</p>
+    </footer>
+    <script src="../js/renderer.js"></script>
+</body>
+</html>

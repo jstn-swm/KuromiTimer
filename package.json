@@ -16,8 +16,12 @@
       "icon": "./img/appIcon.png"
     },
     "win": {
-      "icon": "./img/appIcon.png"
-    }
+    "icon": "./img/appIcon.png"
+  },
+  "files": [
+    "**/*",
+    "!**/*.map"
+  ]
   },
   "keywords": [],
   "author": "",

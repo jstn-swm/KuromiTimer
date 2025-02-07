@@ -13,7 +13,7 @@ const createWindow = () => {
             sandbox: false,
         }
     });
-    win.loadFile('index.html');
+    win.loadFile('public/index.html');
     ipcMain.handle('minimizeWindow', () => win.minimize());
 }
 app.on('window-all-closed', () => {
