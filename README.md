@@ -1,6 +1,6 @@
-# KuroMiTimer
+# KuromiTimer
 
-KuroMiTimer is a simple Pomodoro timer app built with Electron. It helps you stay focused by following the Pomodoro Technique, with customizable time intervals for work and break sessions.
+KuromiTimer is a simple Pomodoro timer app built with Electron. It helps you stay focused by following the Pomodoro Technique, with customizable time intervals for work and break sessions.
 
 ![Version](https://img.shields.io/badge/version-0.0.1-blue)
 ![Build Status](https://img.shields.io/badge/build-pre%20release-brightgreen)
