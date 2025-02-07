@@ -5,10 +5,10 @@ const createWindow = () => {
         width: 400,
         height: 600,
         frame: false,
-        // resizable: false,
+        resizable: false,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
-            // contextIsolation: true,
+            contextIsolation: true,
             nodeIntegration: false,
             sandbox: false,
         }
