@@ -17,11 +17,7 @@
     },
     "win": {
     "icon": "./img/appIcon.png"
-  },
-  "files": [
-    "**/*",
-    "!**/*.map"
-  ]
+  }
   },
   "keywords": [],
   "author": "",
