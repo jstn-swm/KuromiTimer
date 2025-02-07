@@ -12,6 +12,9 @@
   "build": {
     "appId": "com.Jstn-Swm.KuromiTimer",
     "productName": "KuromiTimer",
+    "extraResources": [
+      "public", "img", "styles"
+    ],
     "mac": {
       "icon": "./img/appIcon.png"
     },
