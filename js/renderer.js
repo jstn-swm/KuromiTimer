@@ -1,5 +1,5 @@
 const version = document.getElementById('versions');
-version.innerText = `Node v${versions.node()} Electron v${versions.electron()}`;
+version.innerText = `Node v${versions.node()} Electron v${versions.electron()} Beta: v0.1`;
 const minWindow = document.getElementById('minimize');
 const closeWindow = document.getElementById('close');
 
