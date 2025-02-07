@@ -16,19 +16,16 @@
       "icon": "./img/appIcon.png"
     },
     "win": {
-    "icon": "./img/appIcon.png",
-    "target": [
-      "nsis"
-    ]
+      "icon": "./img/appIcon.png",
+      "target": [
+        "nsis"
+      ]
     },
     "nsis": {
-    "oneClick": false,
-    "perMachine": true,
-    "allowElevation": true,
-    "installerIcon": "path/to/installer/icon.ico",
-    "uninstallerIcon": "path/to/uninstaller/icon.ico",
-    "uninstallerStub": "path/to/uninstaller.exe"
-  }
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true
+    }
   },
   "keywords": [],
   "author": "",
