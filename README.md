@@ -26,5 +26,8 @@ KuromiTimer is a simple Pomodoro timer app built with Electron. It helps you sta
 2. Open the `.dmg` file and drag the app into your Applications folder.
 
 ### **For Windows**
+
+> Currently Windows Builds are not working
+
 1. Download the `.exe` installer from the [Releases](https://github.com/jstn-swm/KuroMiTimer/releases).
 2. Run the installer and follow the on-screen instructions.
