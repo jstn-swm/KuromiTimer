@@ -1,7 +1,7 @@
 {
   "name": "kuromitimer",
   "version": "0.0.1",
-  "description": "",
+  "description": "Kuromi Themed Pomodoro App. This app helps you maximize study efficiency.",
   "main": "./js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,9 @@
     "appId": "com.Jstn-Swm.KuromiTimer",
     "productName": "KuromiTimer",
     "extraResources": [
-      "public", "img", "styles"
+      "public",
+      "img",
+      "styles"
     ],
     "mac": {
       "icon": "./img/appIcon.png"
@@ -35,7 +37,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "electron": "^34.0.2",
+    "electron": "^34.5.0",
     "electron-builder": "^25.1.8"
   }
 }
