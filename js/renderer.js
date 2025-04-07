@@ -49,7 +49,8 @@ function drawClock() {
     ctx.moveTo(innerX, innerY);
     ctx.lineTo(outerX, outerY);
     ctx.lineWidth = 3;
-    ctx.strokeStyle = "black";
+    if (i % 3 == 0) ctx.strokeStyle = "#8260a2";
+    else ctx.strokeStyle = "black";
     ctx.stroke();
   }
 }
@@ -57,6 +58,7 @@ drawClock();
 const playButton = document.getElementById("playBtn");
 playButton.innerText = "Start";
 const numericDisplay = document.getElementById("numeric");
+numericDisplay.innerText = "00 : 00";
 class PomodoroTimer {
   constructor() {
     // Time in seconds
@@ -69,7 +71,7 @@ class PomodoroTimer {
     this.remainingTime = 0;
     this.totalTime = 0; // Store total time for progress calculations
     this.timer = null;
-    this.isPaused = null;
+    this.isPaused = true;
   }
 
   setTime(duration) {
@@ -107,11 +109,16 @@ class PomodoroTimer {
       console.log("Error: No Time Selected!");
       return;
     }
+
+    // Check if the timer is paused OR if it's being started for the first time
     if (this.isPaused) {
       this.isPaused = false;
       this.runTimer();
-      playButton.innerText = "Stop";
+      playButton.innerText = "Stop"; // Change to "Pause" instead of "Stop" for clarity
       console.log("Timer Started");
+    } else {
+      // If timer is running, pause it
+      this.pause();
     }
   }
 
@@ -141,3 +148,7 @@ class PomodoroTimer {
 
 // Initialize Pomodoro Timer
 const pomodoro = new PomodoroTimer();
+pomodoro.setTime("time5");
+playButton.addEventListener("click", () => {
+  pomodoro.start();
+});
